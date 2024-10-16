@@ -1,22 +1,42 @@
-.body {
+.padre {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0;
+  background-color: #079c20;
 }
 .container {
-  margin-bottom: 600px;
-  background-color: #079c20;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
 }
 .card {
   height: 300px;
   width: 200px;
   border: 2px solid black;
-  border-radius: 10px;
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 10px;
+  padding: 20px;
   background-color: white;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card-number {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  align-self: center;
+}
+.top-suit {
+  font-size: 29px;
+  align-self: flex-start;
+}
+.bottom-suit {
+  font-size: 29px;
+  align-self: end;
+  transform: rotate(180deg);
 }
